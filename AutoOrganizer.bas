@@ -62,7 +62,7 @@ Sub AutoOrganize()
             For Each currentWord In arrStop
                 currentSubject = Replace(currentSubject, currentWord, "")
             Next
-                       
+            currentSubject = Trim(currentSubject)
             'confirm
             If newFolder = "" Then newFolder = InputBox("Create new folder", "Auto Organizer", currentSubject)
                                     
